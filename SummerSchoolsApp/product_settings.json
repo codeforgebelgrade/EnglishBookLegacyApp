@@ -1,0 +1,16 @@
+{
+  "product_types": [
+    "Course",
+    "Misc",
+    "Plane tickets",
+    "Registration fees",
+    "Transfer"
+  ],
+  "product_groups": [
+    "Kopaonik",
+    "Malta",
+    "Other",
+    "UK",
+    "USA"
+  ]
+}

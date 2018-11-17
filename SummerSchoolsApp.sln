@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SummerSchoolsApp", "SummerSchoolsApp\SummerSchoolsApp.csproj", "{734F73BC-B98A-4B78-B111-5D510362105C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SummerSchoolSetup", "SummerSchoolSetup\SummerSchoolSetup.vdproj", "{2762A4AE-4E4C-44C2-849E-FD7B56FA54DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBBroker", "DBBroker\DBBroker.csproj", "{06FD6833-E346-4F7E-A966-92ABE647A1EB}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{734F73BC-B98A-4B78-B111-5D510362105C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734F73BC-B98A-4B78-B111-5D510362105C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734F73BC-B98A-4B78-B111-5D510362105C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734F73BC-B98A-4B78-B111-5D510362105C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2762A4AE-4E4C-44C2-849E-FD7B56FA54DD}.Debug|Any CPU.ActiveCfg = Debug
+		{2762A4AE-4E4C-44C2-849E-FD7B56FA54DD}.Release|Any CPU.ActiveCfg = Release
+		{06FD6833-E346-4F7E-A966-92ABE647A1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FD6833-E346-4F7E-A966-92ABE647A1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FD6833-E346-4F7E-A966-92ABE647A1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FD6833-E346-4F7E-A966-92ABE647A1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
