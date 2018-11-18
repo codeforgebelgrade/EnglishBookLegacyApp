@@ -28,17 +28,25 @@ namespace SummerSchoolsApp
 
         private void LoadProductDataFromSettingsFile()
         {
-            var jsonSerializer = new DataContractJsonSerializer(typeof(ProductSettings));
-            ProductSettings productSettings = jsonSerializer.ReadObject(File.OpenRead("product_settings.json")) as ProductSettings;
-            foreach(string item in productSettings.productTypes)
+            using (FileStream fs = new FileStream("product_settings.json", FileMode.Open))
             {
-                comboBoxProductType.Items.Add(item);
+                var jsonSerializer = new DataContractJsonSerializer(typeof(ProductSettings));
+                ProductSettings productSettings = jsonSerializer.ReadObject(fs) as ProductSettings;
+
+                comboBoxProductType.Items.Clear();
+                comboBoxProductGroup.Items.Clear();
+
+                foreach (string item in productSettings.productTypes)
+                {
+                    comboBoxProductType.Items.Add(item);
+                }
+
+                foreach (string item in productSettings.productGroups)
+                {
+                    comboBoxProductGroup.Items.Add(item);
+                }
             }
 
-            foreach(string item in productSettings.productGroups)
-            {
-                comboBoxProductGroup.Items.Add(item);
-            }
         }
 
         public void SetProviderDataGrid()
@@ -428,6 +436,15 @@ namespace SummerSchoolsApp
             return true;
         }
 
+        private void btnModifyProductSettings_Click(object sender, EventArgs e)
+        {
+            FrmProductSettings frmProdSettings = new FrmProductSettings(this);
+            frmProdSettings.Show();
+        }
 
+        public void ProcessEvent()
+        {
+            LoadProductDataFromSettingsFile();
+        }
     }
 }

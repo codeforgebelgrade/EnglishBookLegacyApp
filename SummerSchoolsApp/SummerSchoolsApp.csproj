@@ -72,6 +72,12 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.10\lib\net35\Newtonsoft.Json.Schema.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -178,6 +184,12 @@
     <Compile Include="ControlMaintenance.Designer.cs">
       <DependentUpon>ControlMaintenance.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProductSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProductSettings.Designer.cs">
+      <DependentUpon>FrmProductSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -226,6 +238,9 @@
     <EmbeddedResource Include="ControlMaintenance.resx">
       <DependentUpon>ControlMaintenance.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmProductSettings.resx">
+      <DependentUpon>FrmProductSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -237,6 +252,7 @@
     <EmbeddedResource Include="ControlUserSettings.resx">
       <DependentUpon>ControlUserSettings.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

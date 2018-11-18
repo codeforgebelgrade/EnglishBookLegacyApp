@@ -133,6 +133,7 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.btnModifyProductSettings = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -780,7 +781,7 @@
             this.panel3.Controls.Add(this.groupBox6);
             this.panel3.Location = new System.Drawing.Point(8, 8);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(760, 464);
+            this.panel3.Size = new System.Drawing.Size(760, 540);
             this.panel3.TabIndex = 3;
             // 
             // groupBox8
@@ -836,7 +837,7 @@
             this.groupBox5.Controls.Add(this.textBoxProdTypeDelete);
             this.groupBox5.Controls.Add(this.button7);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(8, 376);
+            this.groupBox5.Location = new System.Drawing.Point(8, 464);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(744, 73);
             this.groupBox5.TabIndex = 74;
@@ -892,6 +893,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.btnModifyProductSettings);
             this.groupBox6.Controls.Add(this.label1);
             this.groupBox6.Controls.Add(this.textBoxCostPrice);
             this.groupBox6.Controls.Add(this.textBoxPrice);
@@ -910,7 +912,7 @@
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(8, 120);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(744, 240);
+            this.groupBox6.Size = new System.Drawing.Size(744, 338);
             this.groupBox6.TabIndex = 73;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Add new product";
@@ -1020,7 +1022,7 @@
             // button8
             // 
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(616, 184);
+            this.button8.Location = new System.Drawing.Point(616, 284);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(115, 39);
             this.button8.TabIndex = 12;
@@ -1219,6 +1221,17 @@
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Marketing sources";
             // 
+            // btnModifyProductSettings
+            // 
+            this.btnModifyProductSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyProductSettings.Location = new System.Drawing.Point(481, 284);
+            this.btnModifyProductSettings.Name = "btnModifyProductSettings";
+            this.btnModifyProductSettings.Size = new System.Drawing.Size(115, 39);
+            this.btnModifyProductSettings.TabIndex = 24;
+            this.btnModifyProductSettings.Text = "Modify product settings";
+            this.btnModifyProductSettings.UseVisualStyleBackColor = true;
+            this.btnModifyProductSettings.Click += new System.EventHandler(this.btnModifyProductSettings_Click);
+            // 
             // ControlMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1370,5 +1383,6 @@
         private System.Windows.Forms.MaskedTextBox textBoxPrice;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox textBoxCostPrice;
+        private System.Windows.Forms.Button btnModifyProductSettings;
     }
 }
